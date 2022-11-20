@@ -1,0 +1,17 @@
+SPDXVersion: SPDX-2.1
+DataLicense: CC0-1.0
+PackageName: passgen
+DataFormat: SPDXRef-1
+PackageSupplier: Person: xTekC
+PackageHomePage: https://github.com/xTekC/passgen
+PackageLicenseDeclared: MPL-2.0
+PackageCopyrightText: 2022, xTekC
+PackageSummary: <text>...</text>
+PackageComment: <text>The package includes the following libraries; see
+Relationship information.
+                </text>
+Created: 2022
+PackageDownloadLocation: git://github.com/xTekC/passgen
+PackageDownloadLocation: git+https://github.com/xTekC/passgen.git
+PackageDownloadLocation: git+ssh://github.com/xTekC/passgen.git
+Creator: Person: xTekC

@@ -1,0 +1,16 @@
+[package]
+name = "passgen"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "passgen"
+path = "src/bin/passgen.rs"
+
+[dependencies]
+anyhow = "1.0.66"
+clap = { version = "4.0.26", features = ["derive"] }
+futures = "0.3.25"
+owo-colors = "3.5.0"
+random-string = "1.0.0"
+tokio = { version = "1.21.2", features = ["macros", "rt-multi-thread"] }
