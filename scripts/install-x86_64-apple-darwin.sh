@@ -10,7 +10,7 @@ echo Installing passgen...
 PASSGEN_DIR=${PASSGEN_DIR-"$HOME/.passgen"}
 PASSGEN_BIN_DIR="$PASSGEN_DIR/bin"
 
-BIN_URL="https://github.com/xTeKc/passgen/releases/download/v0.1.0-5bde7732/passgen-x86_64-apple-darwin"
+BIN_URL="https://github.com/xTeKc/passgen/releases/download/v0.1.0-39e3c92c/passgen-x86_64-apple-darwin"
 BIN_PATH="$PASSGEN_BIN_DIR/passgen"
 
 # create .passgen bin dir and passgen bin if they don't exist
