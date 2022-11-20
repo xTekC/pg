@@ -4,11 +4,12 @@ Password generator
 ## **Install**
 x86_64-linux-gnu
 ```
-curl -L https://raw.githubusercontent.com/xTeKc/passgen/main/scripts/local/install-x86_64-linux-gnu.sh | bash
+curl -L https://raw.githubusercontent.com/xTeKc/passgen/main/scripts/install-x86_64-linux-gnu.sh | bash
 ```
+
 x86_64-apple-darwin
 ```
-curl -L https://raw.githubusercontent.com/xTeKc/passgen/main/scripts/local/install-x86_64-apple-darwin.sh | bash
+curl -L https://raw.githubusercontent.com/xTeKc/passgen/main/scripts/install-x86_64-apple-darwin.sh | bash
 ``` 
 
 ## **Usage**
