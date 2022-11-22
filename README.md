@@ -1,5 +1,6 @@
 # passgen
-Password generator
+Asynchronous Password Generator
+
 
 ## **Install**
 x86_64-linux-gnu
