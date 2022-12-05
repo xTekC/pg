@@ -10,41 +10,41 @@ UNAME_OUT="$(uname -m)"
 
 case "${UNAME_OUT}" in
     i686-unknown-linux-gnu)
-        echo "Detected system: i686 Linux"
+        SYSTEM=i686-unknown-linux-gnu
         ;;
     i686-unknown-linux-musl)
-        echo "Detected system: i686 Linux musl"
+        SYSTEM=i686-unknown-linux-musl
         ;;
     x86_64-unknown-linux-gnu)
-        echo "Detected system: x86_64 Linux"
+        SYSTEM=x86_64-unknown-linux-gnu
         ;;
     x86_64-unknown-linux-musl)
-        echo "Detected system: x86_64 Linux musl"
+        SYSTEM=x86_64-unknown-linux-musl
         ;;
     aarch64-unknown-linux-gnu)
-        echo "Detected system: aarch64 Linux"
+        SYSTEM=aarch64-unknown-linux-gnu
         ;;
     aarch64-unknown-linux-musl)
-        echo "Detected system: aarch64 Linux musl"
+        SYSTEM=aarch64-unknown-linux-musl
         ;;
     riscv64gc-unknown-linux-gnu)
-        echo "Detected system: riscv64gc Linux"
+        SYSTEM=riscv64gc-unknown-linux-gnu
         ;;
     armv7-unknown-linux-gnueabihf)
-        echo "Detected system: armv7 Linux"
+        SYSTEM=armv7-unknown-linux-gnueabihf
         ;;
     x86_64-apple-darwin)
-        echo "Detected system: x86_64 Mac"
+        SYSTEM=x86_64-apple-darwin
         ;;
     aarch64-apple-darwin)
-        echo "Detected system: aarch64 Mac"
+        SYSTEM=aarch64-apple-darwin
         ;;
     *)
-        echo "Detected system: UNKNOWN:${UNAME_OUT}"
+        SYSTEM=UNKNOWN:${UNAME_OUT}
         ;;
 esac
 
-echo "Detected operating system: ${UNAME_OUT}"
+echo "Detected operating system: ${SYSTEM}"
 
 BIN_NAME="passgen"
 BIN_VER="v0.1.0-39e3c92c"
@@ -55,7 +55,7 @@ echo Installing "$BIN_NAME"...
 BIN_NAME_DIR=${BIN_NAME_DIR-"$HOME/.$BIN_NAME"}
 BIN_NAME_BIN_DIR=$BIN_NAME_DIR/bin
 
-BIN_URL="https://github.com/$BIN_AUTHOR/$BIN_NAME/releases/download/$BIN_VER/$BIN_NAME-$UNAME_OUT"
+BIN_URL="https://github.com/$BIN_AUTHOR/$BIN_NAME/releases/download/$BIN_VER/$BIN_NAME-$SYSTEM"
 BIN_PATH="$BIN_NAME_BIN_DIR/$BIN_NAME"
 
 # create .$BIN_NAME bin dir and $BIN_NAME bin if they don't exist
