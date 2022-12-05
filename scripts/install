@@ -17,7 +17,7 @@ esac
 
 echo "Detected operating system: ${system}"
 
-echo Installing $BIN_NAME...
+echo Installing "$BIN_NAME"...
 
 BIN_NAME_DIR=${BIN_NAME_DIR-"$HOME/.$BIN_NAME"}
 BIN_NAME_BIN_DIR="$BIN_NAME_DIR/bin"
