@@ -56,6 +56,9 @@ BIN_NAME_DIR=${BIN_NAME_DIR-"$HOME/.$BIN_NAME"}
 BIN_NAME_BIN_DIR=$BIN_NAME_DIR/bin
 
 BIN_URL="https://github.com/$BIN_AUTHOR/$BIN_NAME/releases/download/$BIN_VER/$BIN_NAME-$SYSTEM"
+
+echo "$BIN_URL"
+
 BIN_PATH="$BIN_NAME_BIN_DIR/$BIN_NAME"
 
 # create .$BIN_NAME bin dir and $BIN_NAME bin if they don't exist
