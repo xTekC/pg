@@ -6,7 +6,7 @@
 set -e
 
 # Check the OS type
-UNAME_OUT="$(uname -m)"
+UNAME_OUT="$(uname -m -i -o)"
 
 case "${UNAME_OUT}" in
     i686-unknown-linux-gnu)
