@@ -6,16 +6,45 @@
 set -e
 
 # Check the OS type
-UNAME_OUT="$(uname -s)"
+UNAME_OUT="$(uname -m)"
+
 case "${UNAME_OUT}" in
-    Linux*)     system=Linux;;
-    Darwin*)    system=Mac;;
-    CYGWIN*)    system=Cygwin;;
-    MINGW*)     system=Windows;;
-    *)          system="UNKNOWN:${UNAME_OUT}"
+    i686-unknown-linux-gnu)
+        echo "Detected system: i686 Linux"
+        ;;
+    i686-unknown-linux-musl)
+        echo "Detected system: i686 Linux musl"
+        ;;
+    x86_64-unknown-linux-gnu)
+        echo "Detected system: x86_64 Linux"
+        ;;
+    x86_64-unknown-linux-musl)
+        echo "Detected system: x86_64 Linux musl"
+        ;;
+    aarch64-unknown-linux-gnu)
+        echo "Detected system: aarch64 Linux"
+        ;;
+    aarch64-unknown-linux-musl)
+        echo "Detected system: aarch64 Linux musl"
+        ;;
+    riscv64gc-unknown-linux-gnu)
+        echo "Detected system: riscv64gc Linux"
+        ;;
+    armv7-unknown-linux-gnueabihf)
+        echo "Detected system: armv7 Linux"
+        ;;
+    x86_64-apple-darwin)
+        echo "Detected system: x86_64 Mac"
+        ;;
+    aarch64-apple-darwin)
+        echo "Detected system: aarch64 Mac"
+        ;;
+    *)
+        echo "Detected system: UNKNOWN:${UNAME_OUT}"
+        ;;
 esac
 
-echo "Detected operating system: ${system}"
+echo "Detected operating system: ${UNAME_OUT}"
 
 BIN_NAME="passgen"
 BIN_VER="v0.1.0-39e3c92c"
@@ -26,7 +55,7 @@ echo Installing "$BIN_NAME"...
 BIN_NAME_DIR=${BIN_NAME_DIR-"$HOME/.$BIN_NAME"}
 BIN_NAME_BIN_DIR=$BIN_NAME_DIR/bin
 
-BIN_URL="https://github.com/$BIN_AUTHOR/$BIN_NAME/releases/download/$BIN_VER/$BIN_NAME-$system"
+BIN_URL="https://github.com/$BIN_AUTHOR/$BIN_NAME/releases/download/$BIN_VER/$BIN_NAME-$UNAME_OUT"
 BIN_PATH="$BIN_NAME_BIN_DIR/$BIN_NAME"
 
 # create .$BIN_NAME bin dir and $BIN_NAME bin if they don't exist
