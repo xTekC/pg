@@ -4,6 +4,12 @@ Asynchronous Password Generator
 https://user-images.githubusercontent.com/81730792/205476127-2a87665f-cead-46b1-bb91-6ed9559e3713.mp4
 
 ## **Install**
+
+unix like
+```
+curl -L https://raw.githubusercontent.com/xTeKc/passgen/main/scripts/install | bash
+```
+
 x86_64-linux-gnu
 ```
 curl -L https://raw.githubusercontent.com/xTeKc/passgen/main/scripts/install-x86_64-linux-gnu.sh | bash
