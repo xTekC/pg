@@ -5,7 +5,7 @@ edition = "2021"
 
 [[bin]]
 name = "passgen"
-path = "src/bin/passgen.rs"
+path = "src/bin/main.rs"
 
 [dependencies]
 anyhow = "1.0.66"
