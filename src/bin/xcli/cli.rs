@@ -32,14 +32,7 @@ pub async fn cli_main() {
             println!("{}  {}", a.yellow(), l.red());
             println!(" ");
         }
-        7 => println!("Password is too short!"),
-        6 => println!("Password is too short!"),
-        5 => println!("Password is too short!"),
-        4 => println!("Password is too short!"),
-        3 => println!("Password is too short!"),
-        2 => println!("Password is too short!"),
-        1 => println!("Password is too short!"),
-        0 => println!("Password is too short!"),
+        0..=7 => println!("Password is too short!"),
         _ => {
             let l = generate(cli.length, xcore_main().await);
             let a = cli.alias.unwrap_or_default();
