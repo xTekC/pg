@@ -1,2 +1,2 @@
-pub mod xcli;
+pub mod cli;
 pub mod xcore;

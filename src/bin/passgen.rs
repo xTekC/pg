@@ -1,6 +1,6 @@
-mod cli;
-use cli::xcli::*;
+mod xcli;
 use futures::executor::block_on;
+use xcli::cli::*;
 
 #[tokio::main]
 async fn main() {

@@ -1,4 +1,4 @@
-use crate::cli::xcore::xcore_main;
+use crate::xcli::xcore::xcore_main;
 use clap::Parser;
 use owo_colors::OwoColorize;
 use random_string::generate;
