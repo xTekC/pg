@@ -108,6 +108,9 @@ https://f-droid.org/repo/com.termux_118.apk
 passgen -h
 ```
 
+- `passgen -l <uint>` &nbsp; generates a new password with the given length
+- `passgen -l <uint> -a <string>` &nbsp; generates a new password with the given length and the given alias
+
 ## Contribution
 Read the [Contributing Guide](CONTRIBUTING.md) before making a pull request.
 
