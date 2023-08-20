@@ -1,7 +1,7 @@
 <div align="center">
 
 # passgen
-...
+Generate secure passwords.
 
 <!-- <a href="https://crates.io/crates/passgen/"><img src="https://img.shields.io/crates/v/passgen?style=flat&amp;labelColor=032a1a&amp;color=065535&amp;logo=Rust&amp;logoColor=white" alt="Crate Release"></a> -->
 <br>
@@ -121,4 +121,3 @@ List of any external libraries, frameworks, or other resources used in the proje
 
 Copyright (c) **xTekC** <br>
 Licensed under [MPL-2.0](LICENSE)
-
