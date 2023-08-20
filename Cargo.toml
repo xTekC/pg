@@ -1,16 +1,38 @@
 [package]
 name = "passgen"
 version = "0.1.0"
+description = "..."
+authors = ["xTekC"]
+repository = "https://github.com/xTekC/passgen"
+readme = "README.md"
+homepage = "https://github.com/xTekC/passgen"
+documentation = "https://github.com/xTekC/passgen/blob/main/README.md"
+categories = ["command-line-utilities", "development-tools"]
+keywords = ["cli", "async"]
+# default-run = "passgen -h"
+publish = false
+# include = "[...]"
+# exclude = "[...]"
+# workspace = "..."
+# links = "..."
+# build = "build.rs"
+rust-version = "1.69.0"
 edition = "2021"
+license = "MPL-2.0"
 
 [[bin]]
 name = "passgen"
 path = "src/bin/main.rs"
 
 [dependencies]
-anyhow = "1.0.66"
-clap = { version = "4.0.26", features = ["derive"] }
-futures = "0.3.25"
+clap = { version = "4.2.7", features = ["derive"] }
 owo-colors = "3.5.0"
 random-string = "1.0.0"
-tokio = { version = "1.21.2", features = ["macros", "rt-multi-thread"] }
+tokio = { version = "1.28.1", features = ["rt-multi-thread", "macros"] }
+
+[profile.rel-opt]
+inherits = "release"
+opt-level = "s"
+lto = true
+codegen-units = 1
+strip = true

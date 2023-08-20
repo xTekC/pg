@@ -1,1 +1,1 @@
-pub mod chars;
+pub mod core;
