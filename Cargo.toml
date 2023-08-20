@@ -1,7 +1,7 @@
 [package]
 name = "passgen"
 version = "0.1.0"
-description = "..."
+description = "Generate secure passwords."
 authors = ["xTekC"]
 repository = "https://github.com/xTekC/passgen"
 readme = "README.md"
