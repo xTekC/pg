@@ -25,7 +25,7 @@ name = "passgen"
 path = "src/bin/main.rs"
 
 [dependencies]
-clap = { version = "4.2.7", features = ["derive"] }
+clap = { version = "4.4.6", features = ["derive"] }
 owo-colors = "3.5.0"
 random-string = "1.0.0"
 tokio = { version = "1.28.1", features = ["rt-multi-thread", "macros"] }
