@@ -1,5 +1,13 @@
 # configuration for https://github.com/orhun/git-cliff
 
+##############################
+#                            #
+#  Copyright (c) xTekC.      #
+#  Licensed under MPL-2.0.   #
+#  See LICENSE for details.  # 
+#                            #
+##############################
+
 [changelog]
 # changelog header
 header = """
@@ -46,7 +54,7 @@ filter_unconventional = true
 split_commits = false
 # regex for preprocessing the commit messages
 commit_preprocessors = [
-    { pattern = '\((\w+\s)?#([0-9]+)\)', replace = "([#${2}](https://github.com/xTekC/passgen/issues/${2}))"},
+    { pattern = '\((\w+\s)?#([0-9]+)\)', replace = "([#${2}](https://github.com/xTekC/pg/issues/${2}))"},
 ]
 # regex for parsing and grouping commits
 commit_parsers = [

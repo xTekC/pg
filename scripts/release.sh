@@ -19,7 +19,7 @@ fi
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
-echo -e "Updated release to ${GREEN}$1${NC}"
+printf "Updated release to ${GREEN}$1${NC}"
 
 # update version
 sed -E -i "/^\[package\]$/,/^\[/ s/^(version = \").*\"$/\1${1#v}\"/" Cargo.toml
@@ -45,13 +45,3 @@ git tag -a "$1" -m "$changelog"
 
 echo "Done!"
 echo "Push the commit (git push), wait for CI, then push the tag (git push origin v<tag_num>)."
-
-# Creating Release
-
-# [GitHub](https://github.com/xTeKc/passgen/releases) and [crates.io](https://crates.io/crates/passgen) releases are automated via [GitHub actions](.github/workflows/cd.yml) and triggered by pushing a tag.
-
-# 1. Run the [release script](./scripts/release.sh): `./scripts/release.sh v[X.Y.Z]` (requires [git-cliff](https://github.com/orhun/git-cliff) for changelog generation)
-# 2. Push the changes: `git push`
-# 3. Check if [Continuous Integration](https://github.com/xTeKc/passgen/actions) workflow is completed successfully.
-# 4. Push the tags: `git push --tags` or a specific tag `git push origin v<tag_num>`
-# 5. Wait for [Continuous Deployment](https://github.com/xTeKc/passgen/actions) workflow to finish.

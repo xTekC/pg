@@ -1,15 +1,15 @@
 [package]
-name = "passgen"
-version = "0.1.0"
-description = "Generate secure passwords."
+name = "pg"
+version = "0.0.0"
+description = "..."
 authors = ["xTekC"]
-repository = "https://github.com/xTekC/passgen"
+repository = "https://github.com/xTekC/pg"
 readme = "README.md"
-homepage = "https://github.com/xTekC/passgen"
-documentation = "https://github.com/xTekC/passgen/blob/main/README.md"
+homepage = "https://github.com/xTekC/pg"
+documentation = "https://github.com/xTekC/pg/blob/main/README.md"
 categories = ["command-line-utilities", "development-tools"]
 keywords = ["cli", "async"]
-# default-run = "passgen -h"
+# default-run = "pg -h"
 publish = false
 # include = "[...]"
 # exclude = "[...]"
@@ -21,14 +21,25 @@ edition = "2021"
 license = "MPL-2.0"
 
 [[bin]]
-name = "passgen"
+name = "pg"
 path = "src/bin/main.rs"
 
 [dependencies]
 clap = { version = "4.2.7", features = ["derive"] }
 owo-colors = "3.5.0"
 random-string = "1.0.0"
-tokio = { version = "1.28.1", features = ["rt-multi-thread", "macros"] }
+tokio = { version = "1.32.0", features = ["rt-multi-thread", "macros"] }
+
+# [dependencies.cursive]
+# version = "0.20.0"
+# default-features = false
+# features = ["crossterm-backend"]
+
+# [dev-dependencies]
+
+
+# [build-dependencies]
+
 
 [profile.rel-opt]
 inherits = "release"

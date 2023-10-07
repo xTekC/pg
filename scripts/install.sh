@@ -18,7 +18,7 @@ RED='\033[0;31m'
 NC='\033[0m' # No Color
 
 AUTHOR_NAME="xTeKc"
-BIN_NAME="passgen"
+BIN_NAME="pg"
 
 detect_architecture() {
   case "$(uname -s)" in

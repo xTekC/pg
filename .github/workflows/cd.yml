@@ -29,7 +29,7 @@ jobs:
         uses: orhun/git-cliff-action@v1
         id: git-cliff
         with:
-          config: config/cliff.toml
+          config: cliff.toml
           args: --latest --strip header
 
   publish-github:
@@ -131,29 +131,29 @@ jobs:
       - name: Prepare release assets
         shell: bash
         run: |
-          mkdir -p passgen/bin/
-          cp {.github/CODEOWNERS,LICENSE,CHANGELOG.md} passgen/
-          echo "${{ github.ref_name }}" > passgen/VERSION
-          for bin in 'passgen'; do
+          mkdir -p pg/bin/
+          cp {.github/CODEOWNERS,LICENSE,CHANGELOG.md} pg/
+          echo "${{ github.ref_name }}" > pg/VERSION
+          for bin in 'pg'; do
             if [ "${{ matrix.build.OS }}" = "windows-latest" ]; then
               bin="${bin}.exe"
             fi
-            cp "target/${{ matrix.build.TARGET }}/rel-opt/${bin}" passgen/bin/
+            cp "target/${{ matrix.build.TARGET }}/rel-opt/${bin}" pg/bin/
           done
 
       - name: Create release artifacts
         shell: bash
         run: |
           if [ "${{ matrix.build.OS }}" = "windows-latest" ]; then
-            7z a -tzip "passgen-${{ github.ref_name }}-${{ matrix.build.TARGET }}.zip" \
-              passgen/
-            CertUtil -hashfile "passgen-${{ github.ref_name }}-${{ matrix.build.TARGET }}.zip" SHA512 \
-              > passgen-${{ github.ref_name }}-${{ matrix.build.TARGET }}.zip.sha512
+            7z a -tzip "pg-${{ github.ref_name }}-${{ matrix.build.TARGET }}.zip" \
+              pg/
+            CertUtil -hashfile "pg-${{ github.ref_name }}-${{ matrix.build.TARGET }}.zip" SHA512 \
+              > pg-${{ github.ref_name }}-${{ matrix.build.TARGET }}.zip.sha512
           else
-            tar -czvf passgen-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz \
-              passgen/
-            shasum -a 512 passgen-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz \
-              > passgen-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz.sha512
+            tar -czvf pg-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz \
+              pg/
+            shasum -a 512 pg-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz \
+              > pg-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz.sha512
           fi
 
       # - name: Sign the release
@@ -164,12 +164,12 @@ jobs:
       #       --passphrase-fd 0 --import private.key
       #     echo "${{ secrets.GPG_PASSPHRASE }}" | gpg --pinentry-mode=loopback \
       #       --passphrase-fd 0 --detach-sign \
-      #       passgen-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz
+      #       pg-${{ github.ref_name }}-${{ matrix.build.TARGET }}.tar.gz
 
       - name: Upload the binary releases
         uses: svenstaro/upload-release-action@v2
         with:
-          file: "passgen-${{ github.ref_name }}-${{ matrix.build.TARGET }}*"
+          file: "pg-${{ github.ref_name }}-${{ matrix.build.TARGET }}*"
           file_glob: true
           overwrite: true
           tag: ${{ github.ref }}

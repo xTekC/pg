@@ -1,6 +1,13 @@
+<!-- /*************************
+ *  Copyright (c) xTekC.      *
+ *  Licensed under MPL-2.0.   *
+ *  See LICENSE for details.  *
+ *                            *
+ ******************************/ -->
+
 To check a box, update "[ ]" to "[x]"
 
-Make sure to read the [Pull Request Guidelines](https://github.com/xTekC/passgen/CONTRIBUTING.md#pull-request-guidelines).
+Make sure to read the [Pull Request Guidelines](https://github.com/xTekC/pg/CONTRIBUTING.md#pull-request-guidelines).
 
 ## Description
 

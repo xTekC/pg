@@ -7,7 +7,7 @@
 
 use clap::Parser;
 use owo_colors::OwoColorize;
-use passgen::xcore::core::core_main;
+use pg::xcore::core::core_main;
 use random_string::generate;
 
 /// Generate secure passwords

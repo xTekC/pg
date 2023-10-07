@@ -17,7 +17,7 @@ red_printf() {
   printf '%b\n' "${RED}$1${NC}"
 }
 
-BIN_NAME="passgen"
+BIN_NAME="pg"
 
 detect_architecture() {
   case "$(uname -s)" in
