@@ -103,12 +103,6 @@ jobs:
       - name: Install target
         run: rustup target add ${{ matrix.build.TARGET }}
 
-      - name: Install Necessary Library
-        if: ${{ matrix.build.OS != 'macos-latest' && matrix.build.OS != 'windows-latest' }}
-        run: |
-          sudo apt update
-          sudo apt install -y libunwind-dev
-
       - name: Build for ${{ matrix.build.TARGET }}
         run: ./scripts/build_debug.sh ${{ matrix.build.TARGET }}
 
