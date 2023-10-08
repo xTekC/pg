@@ -28,7 +28,7 @@ path = "src/bin/main.rs"
 clap = { version = "4.2.7", features = ["derive"] }
 owo-colors = "3.5.0"
 random-string = "1.0.0"
-tokio = { version = "1.32.0", features = ["rt-multi-thread", "macros"] }
+tokio = { version = "1.28.1", features = ["macros", "rt-multi-thread"] }
 
 # [dependencies.cursive]
 # version = "0.20.0"
