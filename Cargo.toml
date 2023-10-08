@@ -1,7 +1,7 @@
 [package]
 name = "pg"
 version = "0.2.0"
-description = "..."
+description = "Generate secure passwords."
 authors = ["xTekC"]
 repository = "https://github.com/xTekC/pg"
 readme = "README.md"
