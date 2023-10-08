@@ -103,24 +103,14 @@ jobs:
       - name: Install target
         run: rustup target add ${{ matrix.build.TARGET }}
 
-      # - name: Install Necessary Library
-      #   if: ${{ matrix.build.OS }} != "macos-latest" && ${{ matrix.build.OS }} != "windows-latest"
-      #   run: |
-      #     sudo apt update
-      #     sudo apt install -y libunwind-dev
-
-      # - name: Build for ${{ matrix.build.TARGET }}
-      #   run: ./scripts/build_debug.sh ${{ matrix.build.TARGET }}
+      - name: Install Necessary Library
+        if: ${{ matrix.build.OS != 'macos-latest' && matrix.build.OS != 'windows-latest' }}
+        run: |
+          sudo apt update
+          sudo apt install -y libunwind-dev
 
       - name: Build for ${{ matrix.build.TARGET }}
-        if: ${{ matrix.build.TARGET != 'riscv64gc-unknown-linux-gnu' && matrix.build.TARGET != 'aarch64-linux-android' && matrix.build.TARGET != 'aarch64-unknown-linux-gnu' && matrix.build.TARGET != 'aarch64-unknown-linux-musl' && matrix.build.TARGET != 'x86_64-unknown-freebsd' && matrix.build.TARGET != 'x86_64-unknown-netbsd' }}
-        run: |
-          cargo build --locked --target ${{ matrix.build.TARGET }} --verbose
-      - name: Build (with cross) for ${{ matrix.build.TARGET }}
-        if: ${{ matrix.build.TARGET == 'riscv64gc-unknown-linux-gnu' || matrix.build.TARGET == 'aarch64-linux-android' || matrix.build.TARGET == 'aarch64-unknown-linux-gnu' || matrix.build.TARGET == 'aarch64-unknown-linux-musl' || matrix.build.TARGET == 'x86_64-unknown-freebsd' || matrix.build.TARGET == 'x86_64-unknown-netbsd' }}
-        run: |
-          cargo install cross
-          cross build --locked --target ${{ matrix.build.TARGET }} --verbose
+        run: ./scripts/build_debug.sh ${{ matrix.build.TARGET }}
 
   test:
     name: Test
