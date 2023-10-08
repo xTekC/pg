@@ -104,6 +104,7 @@ jobs:
         run: rustup target add ${{ matrix.build.TARGET }}
 
       - name: Install Necessary Library
+        if: ${{ matrix.build.OS }} == "ubuntu-latest"
         run: |
           sudo apt update
           sudo apt install -y libunwind-dev
