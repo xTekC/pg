@@ -12,7 +12,7 @@ x86_64-unknown-netbsd"
 
 case " $CROSS_BUILD_TARGETS " in
     *" $TARGET "*)
-        cargo install cross
+        cargo install cross --git https://github.com/cross-rs/cross
         cross build --profile rel-opt --locked --target $TARGET --verbose
         ;;
     *)
