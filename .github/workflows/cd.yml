@@ -118,7 +118,7 @@ jobs:
         run: rustup target add ${{ matrix.build.TARGET }}
 
       - name: Build for ${{ matrix.build.TARGET }}
-        run: ../scripts/build_release.sh ${{ matrix.build.TARGET }}
+        run: ./scripts/build_release.sh ${{ matrix.build.TARGET }}
 
       - name: Prepare release assets
         shell: bash

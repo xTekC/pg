@@ -104,7 +104,7 @@ jobs:
         run: rustup target add ${{ matrix.build.TARGET }}
 
       - name: Build for ${{ matrix.build.TARGET }}
-        run: ../scripts/build_debug.sh ${{ matrix.build.TARGET }}
+        run: ./scripts/build_debug.sh ${{ matrix.build.TARGET }}
 
   test:
     name: Test
