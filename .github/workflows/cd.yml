@@ -117,7 +117,7 @@ jobs:
       - name: Install target
         run: rustup target add ${{ matrix.build.TARGET }}
 
-      - name: Install Necessary Libraries
+      - name: Install Necessary Library
         run: |
           sudo apt update
           sudo apt install -y libunwind-dev
