@@ -1,5 +1,13 @@
 #!/bin/sh
 
+##############################
+#                            #
+#  Copyright (c) xTekC.      #
+#  Licensed under MPL-2.0.   #
+#  See LICENSE for details.  # 
+#                            #
+##############################
+
 TARGET=$1
 
 CROSS_BUILD_TARGETS="\
