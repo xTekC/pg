@@ -120,7 +120,7 @@ jobs:
       - name: Install Necessary Libraries
         run: |
           sudo apt-get update
-          sudo apt-get install -y libunwind-dev libexecinfo-dev
+          sudo apt-get install -y libunwind-dev
 
       - name: Build for ${{ matrix.build.TARGET }}
         run: ./scripts/build_release.sh ${{ matrix.build.TARGET }}
