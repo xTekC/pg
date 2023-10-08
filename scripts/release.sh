@@ -26,13 +26,13 @@ sed -E -i "/^\[package\]$/,/^\[/ s/^(version = \").*\"$/\1${1#v}\"/" Cargo.toml
 cargo build --profile rel-opt
 
 # update changelog
-git cliff --tag "$1" cliff.toml >CHANGELOG.md
+git cliff --tag "$1" --config cliff.toml >CHANGELOG.md
 git add -A
 git commit -m "chore(release): prepare for $1"
 git show
 
 # generate a changelog for the tag message
-changelog=$(git cliff --tag "$1" cliff.toml --unreleased --strip all | sed -e '/^#/d' -e '/^$/d')
+changelog=$(git cliff --tag "$1" --config cliff.toml --unreleased --strip all | sed -e '/^#/d' -e '/^$/d')
 
 # create signed tag
 # git tag -s "$1" -m "$changelog"
