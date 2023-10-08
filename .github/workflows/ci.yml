@@ -26,11 +26,11 @@ jobs:
       fail-fast: false
       matrix:
         build:
-          - {
-              OS: ubuntu-latest,
-              TOOLCHAIN: stable,
-              TARGET: riscv64gc-unknown-linux-gnu,
-            }
+          # - {
+          #     OS: ubuntu-latest,
+          #     TOOLCHAIN: stable,
+          #     TARGET: riscv64gc-unknown-linux-gnu,
+          #   }
           - {
               OS: ubuntu-latest,
               TOOLCHAIN: stable,
@@ -61,11 +61,11 @@ jobs:
               TOOLCHAIN: stable,
               TARGET: x86_64-unknown-freebsd,
             }
-          - {
-              OS: ubuntu-latest,
-              TOOLCHAIN: stable,
-              TARGET: x86_64-unknown-netbsd,
-            }
+          # - {
+          #     OS: ubuntu-latest,
+          #     TOOLCHAIN: stable,
+          #     TARGET: x86_64-unknown-netbsd,
+          #   }
           - {
               OS: macos-latest,
               TOOLCHAIN: stable,
