@@ -1,7 +1,7 @@
 <div align="center">
 
 # pg
-Generate secure passwords.
+...
 
 <!-- <a href="https://crates.io/crates/pg/"><img src="https://img.shields.io/crates/v/pg?style=flat&amp;labelColor=032a1a&amp;color=065535&amp;logo=Rust&amp;logoColor=white" alt="Crate Release"></a> -->
 <br>
@@ -16,29 +16,28 @@ Generate secure passwords.
 [![Ko-fi](https://img.shields.io/badge/Support-Ko--fi-red?style=flat&labelColor=grey&color=f16061&logo=ko-fi&logoColor=white)](https://ko-fi.com/xTekC)
 
 <a href="#features">Features</a> •
-<a href="#installation">Installation</a> •
+<a href="#install">Install</a> •
 <a href="#usage">Usage</a> •
-<a href="#contribution">Contribution</a> •
+<a href="#uninstall">Uninstall</a> •
+<a href="#contribute">Contribute</a> •
 <a href="#donate">Donate</a>
 
 </div>
 
 ## Features
-- Create secure passwords with specified lengths
-- Assign aliases to the secure passwords
+...
 
-## Installation
-
-**Cargo**
-
-```
-cargo install --git https://github.com/xTekC/pg --branch main --locked --profile rel-opt
-```
-
-**Prebuilt Binary**
 <br>
 
-(For Android, use Termux: `https://f-droid.org/repo/com.termux_118.apk`)
+## Install
+
+**Prebuilt Binary**
+
+>For Android, use Termux: `https://f-droid.org/repo/com.termux_118.apk`
+
+>For Windows, use WSL: `https://learn.microsoft.com/en-us/windows/wsl/install`
+
+<br>
 
 Unix-Like [Install](https://github.com/xTeKc/pg/blob/main/scripts/install.sh)<br>
 
@@ -46,11 +45,15 @@ Unix-Like [Install](https://github.com/xTeKc/pg/blob/main/scripts/install.sh)<br
 curl -sSL https://raw.githubusercontent.com/xTeKc/pg/main/scripts/install.sh | sh
 ```
 
-Unix-Like [Remove](https://github.com/xTeKc/pg/blob/main/scripts/remove.sh)
+<br>
+
+**Cargo**
 
 ```
-curl -sSL https://raw.githubusercontent.com/xTeKc/pg/main/scripts/remove.sh | sh
+cargo install --git https://github.com/xTekC/pg --branch main --locked --profile rel-opt
 ```
+
+<br>
 
 ## Usage
 
@@ -58,20 +61,47 @@ curl -sSL https://raw.githubusercontent.com/xTeKc/pg/main/scripts/remove.sh | sh
 pg -h
 ```
 
-- `pg -l <uint>` &nbsp; generates a new password with the given length
-- `pg -l <uint> -a <string>` &nbsp; generates a new password with the given length and the given alias
+<br>
 
-## Contribution
+## Uninstall
+
+**Prebuilt Binary**
+
+>For Android, use Termux: `https://f-droid.org/repo/com.termux_118.apk`
+
+>For Windows, use WSL: `https://learn.microsoft.com/en-us/windows/wsl/install`
+
+<br>
+
+Unix-Like [Uninstall](https://github.com/xTeKc/pg/blob/main/scripts/uninstall.sh)
+
+```
+curl -sSL https://raw.githubusercontent.com/xTeKc/pg/main/scripts/uninstall.sh | sh
+```
+
+<br>
+
+**Cargo**
+
+```
+cargo uninstall pg
+```
+
+<br>
+
+## Contribute
 Read the [Contributing Guide](CONTRIBUTING.md) before making a pull request.
 
+<br>
+
 ## Donate
-If you find pg valuable and wish to support its progress, here are the various avenues through which you can extend your support:
+If you value pg, consider supporting its progress:
 
 - [GitHub Sponsors](https://github.com/sponsors/xTekC)
 - [Buy Me A Coffee](https://www.buymeacoffee.com/xTekC)
 - [Ko-fi](https://ko-fi.com/xTekC)
 
-Your generous donations are invaluable and help fuel the ongoing development of pg. <br>
+Your generous donations will help fuel the ongoing development of pg. <br>
 Thank you!
 
 <br>

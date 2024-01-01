@@ -1,9 +1,9 @@
-/******************************
- *  Copyright (c) xTekC.      *
- *  Licensed under MPL-2.0.   *
- *  See LICENSE for details.  *
- *                            *
- ******************************/
+/******************************************
+ *        Copyright (c) xTekC.            *
+ *        Licensed under MPL-2.0.         *
+ *        See LICENSE for details.        *
+ * https://www.mozilla.org/en-US/MPL/2.0/ *
+ ******************************************/
 
 pub async fn core_main() -> String {
     let z = "".to_owned();
@@ -27,5 +27,5 @@ async fn r_num() -> &'static str {
 }
 
 async fn r_sym() -> &'static str {
-    "&'*@`^}]):,$=!><-[{(%|+#; /~_?."
+    "`~!@#$%^&*()-_=+[{]}\\|;:'\",<.>/?"
 }
