@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [0.1.0] - 2024-01-01
+## [0.1.0] - 2024-01-02
 
 ### 🐛 Bug Fixes
 
@@ -16,6 +16,7 @@ All notable changes to this project will be documented in this file.
 ### ⚙️ Miscellaneous Tasks
 
 - *(downgrade)* Tokio
+- *(project)* Restructure
 - *(project)* Desc
 - *(project)* Restructure
 - *(update)* Cross
