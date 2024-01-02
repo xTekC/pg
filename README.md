@@ -1,7 +1,7 @@
 <div align="center">
 
 # pg
-...
+Generate secure passwords
 
 <!-- <a href="https://crates.io/crates/pg/"><img src="https://img.shields.io/crates/v/pg?style=flat&amp;labelColor=032a1a&amp;color=065535&amp;logo=Rust&amp;logoColor=white" alt="Crate Release"></a> -->
 <br>
