@@ -11,9 +11,14 @@ Generate secure passwords
 
 [![GitHub license](https://img.shields.io/github/license/xTekC/pg.svg?style=flat&labelColor=032a1a&color=065535&logo=GitHub&logoColor=black&label=License)](https://github.com/xTekC/pg/blob/main/LICENSE)
 
-[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-purple?style=flat&labelColor=grey&color=8a63d2&logo=github&logoColor=white)](https://github.com/sponsors/xTekC)
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A-Coffee-orange?style=flat&labelColor=grey&color=ff813f&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/xTekC)
-[![Ko-fi](https://img.shields.io/badge/Support-Ko--fi-red?style=flat&labelColor=grey&color=f16061&logo=ko-fi&logoColor=white)](https://ko-fi.com/xTekC)
+[![Buy Me A Coffee](https://github.com/xTekC/pg/assets/81730792/7730cfc3-6c99-4ea6-a719-f5ff92381a7d)](https://www.buymeacoffee.com/xTekC)
+<br> **Buy Me A Coffee? <3** 
+
+<!-- [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-purple?style=flat&labelColor=grey&color=8a63d2&logo=github&logoColor=white)](https://github.com/sponsors/xTekC) -->
+<!-- [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A-Coffee-orange?style=flat&labelColor=grey&color=ff813f&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/xTekC) -->
+<!-- [![Ko-fi](https://img.shields.io/badge/Support-Ko--fi-red?style=flat&labelColor=grey&color=f16061&logo=ko-fi&logoColor=white)](https://ko-fi.com/xTekC) -->
+
+<br>
 
 <a href="#features">Features</a> •
 <a href="#install">Install</a> •
@@ -97,9 +102,9 @@ Read the [Contributing Guide](CONTRIBUTING.md) before making a pull request.
 ## Donate
 If you value pg, consider supporting its progress:
 
-- [GitHub Sponsors](https://github.com/sponsors/xTekC)
+<!-- - [GitHub Sponsors](https://github.com/sponsors/xTekC) -->
 - [Buy Me A Coffee](https://www.buymeacoffee.com/xTekC)
-- [Ko-fi](https://ko-fi.com/xTekC)
+<!-- - [Ko-fi](https://ko-fi.com/xTekC) -->
 
 Your generous donations will help fuel the ongoing development of pg. <br>
 Thank you!
