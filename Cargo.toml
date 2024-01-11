@@ -27,7 +27,7 @@ path = "src/bin/main.rs"
 [dependencies]
 clap = { version = "4.4.12", features = ["derive"] }
 owo-colors = "4.0.0"
-random-string = "1.0.1"
+random-string = "1.1.0"
 tokio = { version = "1.35.1", features = ["macros", "rt-multi-thread"] }
 
 
