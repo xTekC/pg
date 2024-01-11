@@ -119,7 +119,7 @@ jobs:
           matrix.build.TARGET == 'aarch64-unknown-linux-musl' ||
           matrix.build.TARGET == 'x86_64-unknown-freebsd' }}
         run: |
-          cargo install cross  
+          cargo install cross@0.2.5  
           cross build --profile rel-opt --locked --target ${{ matrix.build.TARGET }} --verbose
 
       - name: Build (with specific cross) for Android targets
