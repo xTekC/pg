@@ -11,7 +11,7 @@ Generate secure passwords
 
 [![GitHub license](https://img.shields.io/github/license/xTekC/pg.svg?style=flat&labelColor=032a1a&color=065535&logo=GitHub&logoColor=black&label=License)](https://github.com/xTekC/pg/blob/main/LICENSE)
 
-[![Buy Me A Coffee](https://github.com/xTekC/pg/assets/81730792/7730cfc3-6c99-4ea6-a719-f5ff92381a7d)](https://www.buymeacoffee.com/xTekC)
+[![Buy Me A Coffee](assets/bmac_orange.gif)](https://www.buymeacoffee.com/xTekC)
 <br> **Buy Me A Coffee? <3** 
 
 <!-- [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub-purple?style=flat&labelColor=grey&color=8a63d2&logo=github&logoColor=white)](https://github.com/sponsors/xTekC) -->
